@@ -65,7 +65,7 @@
     which-key
     helm-ag
     scss-mode
-    whitespace-cleanup-mode)
+    elpy)
   "A list of packages to ensure are installed at lanuch.")
 
 ;; Install required packages
@@ -94,3 +94,17 @@
 (provide 'init)
 
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("5c6d40ef6e7bbe9e83dc0e32db794c7e9a6a0d9eb7d6a874aaf9744c053842b4" "b6db49cec08652adf1ff2341ce32c7303be313b0de38c621676122f255ee46db" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

@@ -27,6 +27,7 @@
 (add-hook 'enh-ruby-mode-hook 'rubocop-mode)
 (add-hook 'enh-ruby-mode-hook 'yas-minor-mode)
 (add-hook 'enh-ruby-mode-hook 'smartparens-mode)
+(add-hook 'enh-ruby-mode-hook 'flycheck-mode)
 
 (eval-after-load 'company
   '(push 'company-robe company-backends))

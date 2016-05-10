@@ -7,6 +7,7 @@
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 (global-set-key (kbd "C-x b") 'helm-mini)
+(global-set-key (kbd "C-c C-j") 'helm-imenu)
 
 ;; Smartparens
 (global-set-key (kbd "C-c m a") 'sp-beginning-of-sexp)
@@ -17,5 +18,8 @@
 
 ;; Magic
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; Kill buffern and window
+(global-set-key (kbd "C-x k") 'kill-buffer-and-window)
 
 (provide 'core-keybindings)
