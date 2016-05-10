@@ -7,7 +7,7 @@
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 (global-set-key (kbd "C-x b") 'helm-mini)
-(global-set-key (kbd "C-c C-j") 'helm-imenu)
+(global-set-key (kbd "C-c i") 'helm-imenu)
 
 ;; Smartparens
 (global-set-key (kbd "C-c m a") 'sp-beginning-of-sexp)
