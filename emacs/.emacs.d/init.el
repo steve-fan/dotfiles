@@ -42,6 +42,7 @@
     smartparens
     rainbow-delimiters
     expand-region
+    anzu
     python-mode
     go-mode
     go-rename
