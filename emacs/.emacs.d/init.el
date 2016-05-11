@@ -40,6 +40,7 @@
 (defvar package-list
   '(exec-path-from-shell
     smartparens
+    rainbow-delimiters
     python-mode
     go-mode
     go-rename

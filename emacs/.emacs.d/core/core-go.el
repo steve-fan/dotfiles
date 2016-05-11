@@ -5,6 +5,7 @@
 (add-hook 'before-save-hook 'gofmt-before-save)
 (add-hook 'go-mode-hook 'smartparens-mode)
 (add-hook 'go-mode-hook 'yas-minor-mode)
+(add-hook 'go-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'go-mode-hook
           (lambda ()
             (setq tab-width 4)

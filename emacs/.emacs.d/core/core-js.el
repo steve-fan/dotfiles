@@ -5,5 +5,6 @@
 (add-hook 'js2-mode-hook 'js2-refactor-mode)
 (add-hook 'js2-mode-hook 'smartparens-mode)
 (add-hook 'js2-mode-hook 'yas-minor-mode)
+(add-hook 'js2-mode-hook 'rainbow-delimiters-mode)
 
 (provide 'core-js)

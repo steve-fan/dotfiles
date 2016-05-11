@@ -6,6 +6,7 @@
 (add-hook 'js2-jsx-mode-hook 'emmet-mode)
 (add-hook 'js2-jsx-mode-hook 'smartparens-mode)
 (add-hook 'js2-jsx-mode-hook 'yas-minor-mode)
+(add-hook 'js2-jsx-mode-hook 'rainbow-delimiters-mode)
 
 
 (provide 'core-jsx)
