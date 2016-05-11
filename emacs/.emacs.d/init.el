@@ -41,6 +41,7 @@
   '(exec-path-from-shell
     smartparens
     rainbow-delimiters
+    expand-region
     python-mode
     go-mode
     go-rename

@@ -22,4 +22,7 @@
 ;; Kill buffern and window
 (global-set-key (kbd "C-x k") 'kill-buffer-and-window)
 
+;; expand-region
+(global-set-key (kbd "C-c =") 'er/expand-region)
+
 (provide 'core-keybindings)
