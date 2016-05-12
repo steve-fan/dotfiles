@@ -26,6 +26,7 @@
 (add-hook 'python-mode-hook 'flycheck-mode)
 
 (add-hook 'python-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'python-mode-hook 'smartparens-mode)
 
 (elpy-enable)
 (elpy-use-cpython "/usr/local/bin/python3")

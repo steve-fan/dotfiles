@@ -70,6 +70,8 @@
     which-key
     helm-ag
     scss-mode
+    elixir-mode
+    alchemist
     elpy)
   "A list of packages to ensure are installed at lanuch.")
 
@@ -93,6 +95,7 @@
 (require 'core-js)
 (require 'core-jsx)
 (require 'core-lisp)
+(require 'core-elixir)
 
 (require 'core-custom)
 

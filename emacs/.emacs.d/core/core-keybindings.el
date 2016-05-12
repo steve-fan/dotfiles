@@ -1,6 +1,7 @@
 ;; Perspective
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-x C-k") 'kill-buffer-and-window)
+(global-set-key (kbd "C-c C-j ") 'join-line)
 
 ;; Helm
 (global-set-key (kbd "M-x") 'helm-M-x)
