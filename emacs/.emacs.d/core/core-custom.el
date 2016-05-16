@@ -11,4 +11,10 @@
 (global-undo-tree-mode)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+(add-to-list 'display-buffer-alist
+             `(,(rx bos "*helm" (* not-newline) "*" eos)
+               (display-buffer-in-side-window)
+               (inhibit-same-window . t)
+               (window-height . 0.3)))
+
 (provide 'core-custom)
