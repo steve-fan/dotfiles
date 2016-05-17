@@ -74,6 +74,7 @@
     alchemist
     quickrun
     switch-window
+    restclient
     elpy)
   "A list of packages to ensure are installed at lanuch.")
 
