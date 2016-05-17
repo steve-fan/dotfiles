@@ -72,6 +72,8 @@
     scss-mode
     elixir-mode
     alchemist
+    quickrun
+    switch-window
     elpy)
   "A list of packages to ensure are installed at lanuch.")
 
@@ -96,9 +98,11 @@
 (require 'core-jsx)
 (require 'core-lisp)
 (require 'core-elixir)
+(require 'core-scala)
 
 (require 'core-custom)
 
 (provide 'init)
 
 ;;; init.el ends here
+(put 'upcase-region 'disabled nil)
