@@ -75,6 +75,7 @@
     quickrun
     switch-window
     restclient
+    undo-tree
     elpy)
   "A list of packages to ensure are installed at lanuch.")
 
