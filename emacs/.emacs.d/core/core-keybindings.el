@@ -3,6 +3,12 @@
 (global-set-key (kbd "C-x C-k") 'kill-buffer-and-window)
 (global-set-key (kbd "C-c C-j ") 'join-line)
 
+(defun top-join-line ()
+  "Join the current line with the line beneath it."
+  (interactive)
+  (delete-indentation 1))
+(global-set-key (kbd "C-^") 'top-join-line)
+
 ;; Helm
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
@@ -28,5 +34,11 @@
 
 ;; switch-window
 (global-set-key (kbd "C-x o") 'switch-window)
+
+(global-set-key (kbd "C-x f") 'helm-projectile-find-file)
+
+;; anzu
+(global-set-key [remap query-replace] 'anzu-query-replace)
+(global-set-key [remap query-replace-regexp] 'anzu-query-replace-regexp)
 
 (provide 'core-keybindings)

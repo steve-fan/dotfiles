@@ -34,11 +34,13 @@
 
 ;; update the package metadata
 (unless package-archive-contents
-  (package-refresh-contents))
+    (package-refresh-contents))
 
 ;; required package list
 (defvar package-list
   '(exec-path-from-shell
+    company
+    super-save
     smartparens
     rainbow-delimiters
     expand-region
@@ -76,6 +78,9 @@
     switch-window
     restclient
     undo-tree
+    json-mode
+    json-reformat
+    yaml-mode
     elpy)
   "A list of packages to ensure are installed at lanuch.")
 
@@ -105,6 +110,3 @@
 (require 'core-custom)
 
 (provide 'init)
-
-;;; init.el ends here
-(put 'upcase-region 'disabled nil)

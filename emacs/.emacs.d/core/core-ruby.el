@@ -24,10 +24,10 @@
 
 (add-hook 'enh-ruby-mode-hook 'robe-mode)
 (add-hook 'enh-ruby-mode-hook 'inf-ruby-minor-mode)
-(add-hook 'enh-ruby-mode-hook 'rubocop-mode)
+;; (add-hook 'enh-ruby-mode-hook 'rubocop-mode)
 (add-hook 'enh-ruby-mode-hook 'yas-minor-mode)
 (add-hook 'enh-ruby-mode-hook 'smartparens-mode)
-(add-hook 'enh-ruby-mode-hook 'flycheck-mode)
+;; (add-hook 'enh-ruby-mode-hook 'flycheck-mode)
 (add-hook 'enh-ruby-mode-hook 'rainbow-delimiters-mode)
 
 (eval-after-load 'company

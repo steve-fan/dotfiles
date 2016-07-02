@@ -14,11 +14,4 @@
 (setq show-paren-delay 0.0)
 (load-theme 'ujelly t)
 
-(set-face-background 'vertical-border "color-232")
-(defun change-window-divider ()
-  (let ((display-table (or buffer-display-table standard-display-table)))
-        (set-display-table-slot display-table  5 ?   )
-        (set-window-display-table (selected-window) display-table)))
-(add-hook 'window-configuration-change-hook 'change-window-divider)
-
 (provide 'core-ui)
