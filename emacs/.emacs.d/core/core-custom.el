@@ -29,4 +29,14 @@
   (interactive)
   (mapc 'kill-buffer (buffer-list)))
 
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '( (perl . t)
+    (ruby . t)
+    (sh . t)
+    (python . t)
+    (emacs-lisp . t)
+   )
+ )
+
 (provide 'core-custom)
