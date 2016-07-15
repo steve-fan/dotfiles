@@ -48,6 +48,7 @@
     python-mode
     go-mode
     go-rename
+    go-eldoc
     company-go
     magit
     yasnippet
@@ -98,6 +99,7 @@
 (require 'core-helm)
 (require 'core-company)
 
+;; (require 'core-org)
 (require 'core-ruby)
 (require 'core-python)
 (require 'core-go)
