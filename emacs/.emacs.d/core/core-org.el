@@ -1,3 +1,20 @@
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '( (perl . t)
+    (ruby . t)
+    (sh . t)
+    (python . t)
+    (emacs-lisp . t)
+    )
+ )
+
+(setq org-use-speed-commands t)
+(set-default 'truncate-lines t)
+(setq org-file-apps
+          '((auto-mode . emacs)
+            ("\\.?\\'" . "open %s")
+            ))
+
 (setq org-publish-project-alist
       '(("blog-html"
          :base-directory "~/org/blog/"
@@ -18,6 +35,6 @@
          :recursive t
          )
         ("blog" :components ("blog-html" "blog-static"))
-        )
+        ))
 
 (provide 'core-org)

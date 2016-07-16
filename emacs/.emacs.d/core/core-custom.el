@@ -12,6 +12,7 @@
 (global-undo-tree-mode)
 (super-save-mode +1)
 (setq super-save-auto-save-when-idle t)
+(setq super-save-idle-duration 2)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (add-to-list 'display-buffer-alist
@@ -29,21 +30,13 @@
   (interactive)
   (mapc 'kill-buffer (buffer-list)))
 
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '( (perl . t)
-    (ruby . t)
-    (sh . t)
-    (python . t)
-    (emacs-lisp . t)
-   )
- )
 
 (defun paste-to-osx (text &optional push)
   (let ((process-connection-type nil))
     (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
       (process-send-string proc text)
       (process-send-eof proc))))
+
 
 (setq interprogram-cut-function 'paste-to-osx)
 

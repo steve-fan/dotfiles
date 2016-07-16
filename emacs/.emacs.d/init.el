@@ -110,5 +110,6 @@
 (require 'core-scala)
 
 (require 'core-custom)
+(require 'core-org)
 
 (provide 'init)
