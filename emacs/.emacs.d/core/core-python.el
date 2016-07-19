@@ -8,7 +8,7 @@
                      elpy-module-pyvenv
                      elpy-module-yasnippet))
 ;; flycheck for syntax checking
-(add-hook 'python-mode-hook 'flycheck-mode)
+;; (add-hook 'python-mode-hook 'flycheck-mode)
 
 (add-hook 'python-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'python-mode-hook 'smartparens-mode)
