@@ -40,4 +40,55 @@
 
 (setq interprogram-cut-function 'paste-to-osx)
 
+
+;; Allow 20MB of memory (instead of 0.76MB) before
+;; calling garbage collection. This means GC runs less often,
+;; which speeds up some operations.
+(setq gc-cons-threshold 20000000)
+
+;; Store backups and auto-saved files in
+;; TEMPORARY-FILE-DIRECTORY (which defaults to /tmp on Unix),
+;; instead of in the same directory as the file. This means we're
+;; still making backups, but not where they'll get in the way.
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+;; When opening a file, always follow symlinks
+(setq vc-follow-symlinks t)
+
+;; When saving a file that starts with `#!', make it executable."
+(add-hook 'after-save-hook
+          'executable-make-buffer-file-executable-if-script-p)
+
+;; Single space after periods
+(setq sentence-end-double-space nil)
+
+;; If some text is selected, and you type some text, delete the
+;; selected text and start inserting your typed text.
+(delete-selection-mode t)
+
+;; If you save a file that doesn't end with a newline,
+;; automatically append one.
+(setq require-final-newline t)
+
+;; Don't present the usual startup message, and clear the scratch buffer.
+(setq inhibit-startup-message t)
+(setq initial-scratch-message nil)
+
+;; Add file sizes in human-readable units (KB, MB, etc) to dired buffers.
+(setq-default dired-listing-switches "-alh")
+
+;; Refresh buffers when files change
+(global-auto-revert-mode t)
+
+;; When you perform a problematic operation, flash the screen
+;; instead of ringing the terminal bell.
+(setq visible-bell t)
+
+(setq org-latex-inputenc-alist '(("utf8" . "utf8x")))
+(setq latex-run-command "xelatex")
+
+
 (provide 'core-custom)
