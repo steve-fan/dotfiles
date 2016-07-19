@@ -82,6 +82,10 @@
     json-mode
     json-reformat
     yaml-mode
+    rust-mode
+    racer
+    flycheck-rust
+    cargo
     elpy)
   "A list of packages to ensure are installed at lanuch.")
 
@@ -99,7 +103,6 @@
 (require 'core-helm)
 (require 'core-company)
 
-;; (require 'core-org)
 (require 'core-ruby)
 (require 'core-python)
 (require 'core-go)
@@ -108,6 +111,7 @@
 (require 'core-lisp)
 (require 'core-elixir)
 (require 'core-scala)
+(require 'core-rust)
 
 (require 'core-custom)
 (require 'core-org)
