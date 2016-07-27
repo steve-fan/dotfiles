@@ -12,6 +12,9 @@
       helm-M-x-fuzzy-match t
       helm-imenu-fuzzy-match t)
 
+(custom-set-variables
+  '(helm-follow-mode-persistent t))
+
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to do persistent action
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
 
